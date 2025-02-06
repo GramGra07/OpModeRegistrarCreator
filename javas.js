@@ -62,17 +62,9 @@ function generateData() {
         }
                 `;
     } else if (selector2 === 'Kotlin') {
-        generatedData+="class "+name+"(ahwMap:HardwareMap) {\n//this is where you put all enums and variables\n"
-        for (let i = 0; i < servoList.length; i++) {
-            generatedData += "    private var " + servoList[i] + "Servo\n";
-        }
-        generatedData += "\n"
-        generatedData += "    init {\n"
-        for (let i = 0; i < servoList.length; i++) {
-            generatedData += "        " + servoList[i] + "Servo = ahwMap.get(Servo::class.java, \"" + servoList[i] + "Servo\")\n";
-        }
-        generatedData += "}\n//this is where you put functions to switch states\n"
-        generatedData += "fun update() {\n// this is where you put your state machines and all power functions (call this in our main code)\n}\nfun telemetry(telemetry:Telemetry){\n\n}\n}"
+        generatedData = `
+        Kotlin is currently unsupported.
+        `;
     }
     
     
