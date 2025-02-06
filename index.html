@@ -89,7 +89,7 @@
         <!-- Header Section -->
         <header class="active">
             <div>
-                <h1>Subsystem Maker</h1>
+                <h1>OpMode Registrar Creator</h1>
                 <br>
                 <p>5115 Escape Velocity</p>
             </div>
@@ -98,9 +98,12 @@
         <main>
             <section class="active">
                 <form id="dataForm">
-                    <label for="inputString">Subsystem Name:</label>
-                    <input type="text" id="inputString" name="inputString" required />
-                    <label for="inputList">Servos (comma-seperated):</label>
+                    <label for="selector2">OpModeType:</label>
+                    <select id="selector2" name="selector2" required>
+                        <option value="autonomous">Autonomous</option>
+                        <option value="teleop">TeleOp</option>
+                    </select>
+                    <label for="inputList">Classes (comma-seperated):</label>
                     <input type="text" id="servoList" name="servoList" required />
                     <label for="selector">Language:</label>
                     <select id="selector" name="selector" required>
