@@ -18,25 +18,6 @@ body {
     background-size: cover;
     z-index: -1;
 }
-.progress-bar {
-    width: 100%;
-    background-color: #f1f1f1;
-    border: 1px solid #ddd;
-    height: 10px;
-    position: relative;
-    overflow: hidden; /* Added to limit the progress bar width */
-}
-
-.progress {
-    height: 100%;
-    background-color: #1c8f61;
-    position: absolute;
-}
-
-.language-label {
-    text-align: center;
-    margin-top: 4px;
-}
 header {
     background: #333;
     color: #fff;
@@ -47,27 +28,10 @@ header {
     font: bold 1.5em/0.6 sans-serif;
     text-transform: uppercase;
 }
-header a.feedback-link {
-    color: #fff;
-    margin: 0 1em;
-    text-decoration: none;
-}
 
 header h1,
 header p {
     margin: 0; /* Remove default margin */
-}
-
-.social-icons {
-    display: flex; /* Align icons horizontally */
-    height: 100%; /* Set the height to 100% */
-}
-
-.social-icons a {
-    color: #fff;
-    margin-left: 1em;
-    text-decoration: none;
-    font-size: 1.5em; /* Adjust the size of social icons */
 }
 
 section {
@@ -96,58 +60,6 @@ p {
     font-size: 1.2em;
     color: #555;
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 0.5em;
-    transition: transform 0.3s ease-in-out;
-}
-a:hover {
-    transform: scale(1.2);
-}
-
-.portfolio-images {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1em;
-}
-
-.portfolio-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 1em;
-    transition: transform 0.3s ease-in-out;
-}
-
-.portfolio-image img {
-    width: 100%;
-    height: 100%;
-    object-fit:fill;
-    object-position: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.portfolio-image:hover {
-    transform: scale(1.2);
-}
-
-.about-me {
-    margin-top: 2em;
-    text-align: justify;
-    font-size: 1.2em;
-}
-
-.contact-info {
-    margin-top: 2em;
-}
-
 .footer {
     background: #333;
     color: #fff;
